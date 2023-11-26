@@ -1,0 +1,73 @@
+/* Importando a fonte do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+/* Configurações iniciais para todos os elementos */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing:border-box;
+  font-family: 'Poppins',sans-serif;
+}
+body {
+     background:linear-gradient(#040228 0%,#0075c7 40%);
+     min-height: 100vh;
+     overflow-x: hidden;
+}
+/* Configurações para o cabeçalho */
+header {
+ position: absolute;
+ top: 0;
+ left: 0;
+ width: 100%;
+ padding: 30px 100px;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ z-index: 100;
+
+}
+
+/* Configurações para o logotipo */
+.logo {
+ color: #afff;
+ font-size: 2em;
+ cursor: default;
+}
+
+/* Configurações para os links da navegação */
+.navbar a{
+    color: #afff;
+    text-decoration: none;
+    margin: left 20px;
+    font-weight: 600;
+    padding: 6px 15px;
+    border-radius: 20px;
+
+}
+.navbar a:hover,
+.navbar a:active{
+    background: #00a3b9;
+}
+
+
+  .slideshow {
+    width: 100%;
+    height: 500px; /* Ajuste a altura conforme necessário */
+    overflow: hidden;
+    position: relative;
+    border: 2px solid rgb(52, 2, 133);
+  }
+  
+  .slide {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out; /* Adiciona uma transição suave de 0.5 segundos */
+  }
+  
+  .slide.active {
+    opacity: 1;
+  }
